@@ -1,0 +1,53 @@
+{
+  "name": "ecommerceplaywright",
+  "version": "1.0.0",
+  "description": "A comprehensive Playwright testing framework for e-commerce applications",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:debug": "playwright test --debug",
+    "test:ui": "playwright test --ui",
+    "test:report": "playwright show-report",
+    "test:install": "playwright install",
+    "test:codegen": "playwright codegen",
+    "test:chromium": "playwright test --project=chromium",
+    "test:firefox": "playwright test --project=firefox",
+    "test:webkit": "playwright test --project=webkit",
+    "test:mobile": "playwright test --project=\"Mobile Chrome\"",
+    "test:parallel": "playwright test --workers=4",
+    "test:retry": "playwright test --retries=2",
+    "test:grep": "playwright test --grep",
+    "test:update-snapshots": "playwright test --update-snapshots",
+    "lint": "eslint . --ext .ts",
+    "lint:fix": "eslint . --ext .ts --fix",
+    "format": "prettier --write .",
+    "type-check": "tsc --noEmit"
+  },
+  "keywords": [
+    "playwright",
+    "testing",
+    "e-commerce",
+    "automation",
+    "typescript",
+    "page-object-model"
+  ],
+  "author": "Your Name",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.40.0",
+    "@types/node": "^20.19.9",
+    "typescript": "^5.8.3"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/ecommerce-playwright-framework.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/ecommerce-playwright-framework/issues"
+  },
+  "homepage": "https://github.com/yourusername/ecommerce-playwright-framework#readme"
+}

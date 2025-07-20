@@ -1,0 +1,133 @@
+{
+  "users": {
+    "valid": {
+      "firstName": "John",
+      "lastName": "Doe",
+      "email": "test@example.com",
+      "password": "test123",
+      "confirmPassword": "test123",
+      "telephone": "1234567890"
+    },
+    "invalid": {
+      "firstName": "",
+      "lastName": "",
+      "email": "invalid@example.com",
+      "password": "wrongpassword",
+      "confirmPassword": "wrongpassword",
+      "telephone": ""
+    },
+    "new": {
+      "firstName": "Jane",
+      "lastName": "Smith",
+      "email": "jane.smith@example.com",
+      "password": "SecurePass123!",
+      "confirmPassword": "SecurePass123!",
+      "telephone": "+1-555-123-4567"
+    }
+  },
+  "products": {
+    "searchTerms": [
+      "iPhone",
+      "Samsung",
+      "MacBook",
+      "iPad",
+      "Canon"
+    ],
+    "categories": [
+      "Phones & PDAs",
+      "Laptops & Notebooks",
+      "Tablets",
+      "Cameras",
+      "Components"
+    ],
+    "brands": [
+      "Apple",
+      "Samsung",
+      "HTC",
+      "Hewlett-Packard",
+      "Palm"
+    ]
+  },
+  "addresses": {
+    "billing": {
+      "firstName": "John",
+      "lastName": "Doe",
+      "company": "Test Company",
+      "address1": "123 Test Street",
+      "address2": "Apt 4B",
+      "city": "Test City",
+      "postcode": "12345",
+      "country": "United States",
+      "region": "California"
+    },
+    "shipping": {
+      "firstName": "Jane",
+      "lastName": "Smith",
+      "company": "Another Company",
+      "address1": "456 Shipping Ave",
+      "address2": "Suite 100",
+      "city": "Shipping City",
+      "postcode": "54321",
+      "country": "United States",
+      "region": "New York"
+    }
+  },
+  "payment": {
+    "creditCard": {
+      "cardNumber": "4111111111111111",
+      "cardholderName": "John Doe",
+      "expiryMonth": "12",
+      "expiryYear": "2025",
+      "cvv": "123"
+    },
+    "paypal": {
+      "email": "test@paypal.com",
+      "password": "paypalpass"
+    }
+  },
+  "testScenarios": {
+    "validLogin": {
+      "description": "Login with valid credentials",
+      "expectedResult": "Successfully logged in"
+    },
+    "invalidLogin": {
+      "description": "Login with invalid credentials",
+      "expectedResult": "Error message displayed"
+    },
+    "registration": {
+      "description": "Register new user",
+      "expectedResult": "Account created successfully"
+    },
+    "productSearch": {
+      "description": "Search for products",
+      "expectedResult": "Search results displayed"
+    },
+    "addToCart": {
+      "description": "Add product to cart",
+      "expectedResult": "Product added to cart"
+    }
+  },
+  "urls": {
+    "baseUrl": "https://demo.opencart.com",
+    "home": "/",
+    "login": "/index.php?route=account/login",
+    "register": "/index.php?route=account/register",
+    "cart": "/index.php?route=checkout/cart",
+    "checkout": "/index.php?route=checkout/checkout",
+    "account": "/index.php?route=account/account",
+    "search": "/index.php?route=product/search"
+  },
+  "timeouts": {
+    "short": 2000,
+    "medium": 5000,
+    "long": 10000,
+    "veryLong": 30000
+  },
+  "messages": {
+    "loginSuccess": "My Account",
+    "loginError": "Warning: No match for E-Mail Address and/or Password.",
+    "registerSuccess": "Your Account Has Been Created!",
+    "addToCartSuccess": "Success: You have added",
+    "removeFromCartSuccess": "Success: You have modified your shopping cart!"
+  }
+} 
